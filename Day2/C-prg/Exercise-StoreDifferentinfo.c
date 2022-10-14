@@ -8,7 +8,7 @@ struct Car {
 };
 
 int main() {
-  struct Car car1  = {"BMW", "X5", 1999};
+  struct Car car1  = {"BMW", "X5", 1999}; //declare car1 of type CAr
   struct Car car2  = {"Ford", "Mustang", 1969};
   struct Car car3  = {"Toyota", "Corolla", 2011};
 

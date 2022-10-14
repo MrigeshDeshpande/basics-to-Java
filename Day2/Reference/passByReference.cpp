@@ -10,9 +10,10 @@ int add(int *a); //1. declare a pass by reference function
 //2. define a pass by reference function
 int add(int *a){
 
+    *a=5;
     int b=*a+1; //3. dereference the pointer and increment the value by 1
 
-    *a=5; //4. modify the value of the variable
+    //*a=5; //4. modify the value of the variable
 
     return b; //5. return the value of b
 }
@@ -24,7 +25,7 @@ int main() {
 
     int myAnswer=add(&myVariable); //8. pass the variable by reference
 
-    std::cout<<myAnswer<<std::endl; //9. print the value of myAnswer
+    cout<<myAnswer; //9. print the value of myAnswer
 
     std::cout<<myVariable<<std::endl; //10. print the value of myVariable
 
